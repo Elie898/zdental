@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakta oss - Zdental</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header/Nav -->
+    <header class="main-header">
+      <div class="container header-flex">
+        <img src="logo.png" alt="ZDental logotyp" class="logo" />
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="behandlingar.html">Behandlingar</a></li>
+            <li><a href="priser.html">Priser</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="kontakt.html" class="active">Kontakta oss</a></li>
+          </ul>
+        </nav>
+        <a href="kontakt.html" class="btn boka-tid">BOKA TID</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="hero subpage-hero"
+      style="background-image: url('kontakt.jpg')"
+    >
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Kontakta oss</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontaktformulär & info -->
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-form">
+          <h2 class="section-title">Kontakta oss</h2>
+          <form action="#" method="post">
+            <div class="form-row">
+              <input type="text" name="namn" placeholder="Namn" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <input type="tel" name="tel" placeholder="Tel" required />
+
+            <p>Vad gäller ditt meddelande</p>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="kategori" value="bokning" />
+                Bokning</label
+              >
+              <label
+                ><input type="radio" name="kategori" value="avbokning" />
+                Avbokning</label
+              >
+              <label
+                ><input type="radio" name="kategori" value="akut" /> Akut
+                tandvård</label
+              >
+              <label
+                ><input type="radio" name="kategori" value="ovrigt" />
+                Övrigt</label
+              >
+            </div>
+
+            <textarea
+              name="meddelande"
+              placeholder="Meddelande"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Skicka</button>
+          </form>
+        </div>
+
+        <div class="info-box-combined">
+          <h2 class="section-title">Öppettider</h2>
+          <ul class="opening-hours">
+            <li><strong>Måndag</strong> 09:00 - 15:30</li>
+            <li><strong>Tisdag</strong> 08:30 - 17:30</li>
+            <li><strong>Onsdag</strong> 08:30 - 17:30</li>
+            <li><strong>Torsdag</strong> 08:30 - 17:30</li>
+            <li><strong>Fredag</strong> 08:30 - 17:30</li>
+          </ul>
+
+          <h2 class="section-title">Kontakt info</h2>
+          <p><i class="fas fa-phone-alt"></i> 08-26 12 66</p>
+          <p><i class="fas fa-envelope"></i> Info@zdental.se</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Råsundavägen 166, 169 36 Solna
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Besök oss -->
+    <section class="visit-section">
+      <div class="container">
+        <h2 class="section-title">Besök oss</h2>
+        <p>Råsundavägen 166, 169 36 Solna</p>
+        <p>
+          Du hittar oss snabbt och enkelt både med bil och lokaltrafiken. Buss,
+          tunnelbana och pendeltåg ligger på promenadavstånd.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container footer-flex">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Zdental logotyp" />
+        </div>
+        <div class="footer-contact">
+          <h3>Kontakt info</h3>
+          <p><i class="fas fa-phone-alt"></i> 08-26 12 66</p>
+          <p><i class="fas fa-envelope"></i> Info@zdental.se</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Råsundavägen 166, 169 36 Solna
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Zdental - 2025 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priser - Zdental</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #fffaf5;
+        color: #004d4f;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 20px;
+        border: 1px solid #004d4f;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .accordion-header .icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .accordion-item.active .icon {
+        transform: rotate(180deg);
+      }
+
+      .accordion-body {
+        display: none;
+        padding: 20px;
+        border-left: 1px solid #004d4f;
+        border-right: 1px solid #004d4f;
+        border-bottom: 1px solid #004d4f;
+      }
+
+      .accordion-item.active .accordion-body {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header/Nav -->
+    <header class="main-header">
+      <div class="container header-flex">
+        <img src="logo.png" alt="ZDental logotyp" class="logo" />
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="behandlingar.html">Behandlingar</a></li>
+            <li><a href="priser.html" class="active">Priser</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakta oss</a></li>
+          </ul>
+        </nav>
+        <a href="kontakt.html" class="btn boka-tid">BOKA TID</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="hero subpage-hero"
+      style="background-image: url('Priser.jpg')"
+    >
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Våra priser</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pris Accordion -->
+    <section class="price-section">
+      <h2>Vad kan mitt besök kosta?</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Basundersökning – 1015 kronor <span class="icon">⌄</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Basundersökning där tandläkaren undersöker munhälsa och tänder för
+              att se om du har hål, tittar på tandköttet och bedömer risk för
+              tandlossning eller annan sjukdom som t.ex tandinfektion dvs om det
+              finns behov av kompletterande undersökningar.
+            </p>
+            <ul>
+              <li>Åtgärdskod : 101</li>
+              <li>Allmäntandvårdsbidraget (ATB) kan minska kostnaden.</li>
+              <li>Tandvårdsstödet kan också minska kostnaden.</li>
+            </ul>
+            <p>
+              <strong>
+                Kostnaden påverkas av individuella behov och prisexemplet är
+                endast vägledande. Information om din kostnad och eventuell
+                fortsatt behandling lämnas vid besöket.
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Basundersökning och lätt tandstensborttagning – 1365 kronor
+            <span class="icon">⌄</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Basundersökning av dina tänder och bedömning av din munhälsa med
+              borttagning av mindre mängd tandsten. Tandläkaren ger dig
+              munhygieninstruktioner också.
+            </p>
+            <ul>
+              <li>Åtgärdskod: 101, 207</li>
+              <li>Allmäntandvårdsbidraget (ATB) kan minska kostnaden.</li>
+              <li>Tandvårdsstödet kan också minska kostnaden.</li>
+            </ul>
+            <p>
+              <strong>
+                Kostnaden påverkas av individuella behov och prisexemplet är
+                endast vägledande. Information om din kostnad och eventuell
+                fortsatt behandling lämnas vid besöket.
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Akutbesök med temporär lagning av en tand – 1610 kronor
+            <span class="icon">⌄</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Akutbesök där tandläkaren utreder orsaken till dina besvär och
+              hjälper dig att lindra dem tillfälligt. Till exempel kan det
+              handla om att en lagning har lossnat och att vi gör en temporär
+              lagning.
+            </p>
+            <ul>
+              <li>Åtgärdskod: 103, 121, 302</li>
+              <li>Allmäntandvårdsbidraget (ATB) kan minska kostnaden.</li>
+              <li>Tandvårdsstödet kan också minska kostnaden.</li>
+            </ul>
+            <p>
+              <strong>
+                Kostnaden påverkas av individuella behov och prisexemplet är
+                endast vägledande. Information om din kostnad och eventuell
+                fortsatt behandling lämnas vid besöket.
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Akutbesök med påbörjad rotbehandling – 2085 kronor
+            <span class="icon">⌄</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Akutbesök där tandläkaren utreder och bedömer att en tand är
+              infekterad och ska rotbehandlas. Akuta behandlingen minskar
+              besvären tills nästa besök när själva rotbehandlingen påbörjas.
+            </p>
+            <ul>
+              <li>Åtgärdskod: 103, 121, 521</li>
+              <li>Allmäntandvårdsbidraget (ATB) kan minska kostnaden.</li>
+              <li>Tandvårdsstödet kan också minska kostnaden.</li>
+            </ul>
+            <p>
+              <strong>
+                Kostnaden påverkas av individuella behov och prisexemplet är
+                endast vägledande. Information om din kostnad och eventuell
+                fortsatt behandling lämnas vid besöket.
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Akutbesök med borttagning av tand – 2085 kronor
+            <span class="icon">⌄</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Akutbesök där tandläkaren utreder orsaken till dina besvär och
+              bedömer att en tand inte kan räddas och tandläkaren avlägsnar den
+              dåliga tanden.
+            </p>
+            <ul>
+              <li>Åtgärdskod: 103, 121, 401</li>
+              <li>Allmäntandvårdsbidraget (ATB) kan minska kostnaden.</li>
+              <li>Tandvårdsstödet kan också minska kostnaden.</li>
+            </ul>
+            <p>
+              <strong>
+                Kostnaden påverkas av individuella behov och prisexemplet är
+                endast vägledande. Information om din kostnad och eventuell
+                fortsatt behandling lämnas vid besöket.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Prislista Tabell -->
+    <section class="price-table-section">
+      <div class="container">
+        <h2 class="section-title">Här ser du exempel på våra priser.</h2>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Åtgärdsnr</th>
+              <th>Namn</th>
+              <th class="blue">Ditt belopp upp till 3000 kr</th>
+              <th class="gold">Ditt belopp 3000–15000 kr</th>
+              <th class="red">Ditt belopp över 15000 kr</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Basundersökning och diagnostik, utförd av tandläkare</td>
+              <td class="blue">1015kr</td>
+              <td class="gold">508kr</td>
+              <td class="red">152kr</td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>
+                Kompletterande eller akut undersökning, utförd av tandläkare
+              </td>
+              <td class="blue">495kr</td>
+              <td class="gold">275kr</td>
+              <td class="red">121kr</td>
+            </tr>
+            <tr>
+              <td>107</td>
+              <td>Omfattande undersökning, utförd av tandläkare</td>
+              <td class="blue">1450kr</td>
+              <td class="gold">820kr</td>
+              <td class="red">379kr</td>
+            </tr>
+            <tr>
+              <td>108</td>
+              <td>Utredning inklusive undersökning, utförd av tandläkare</td>
+              <td class="blue">2550kr</td>
+              <td class="gold">1520kr</td>
+              <td class="red">799kr</td>
+            </tr>
+            <tr>
+              <td>322</td>
+              <td>Stegvis exkavering</td>
+              <td class="blue">1450kr</td>
+              <td class="gold">775kr</td>
+              <td class="red">310kr</td>
+            </tr>
+            <tr>
+              <td>341</td>
+              <td>Parodontal sjukdom, mindre omfattning</td>
+              <td class="blue">750kr</td>
+              <td class="gold">430kr</td>
+              <td class="red">206kr</td>
+            </tr>
+            <tr>
+              <td>342</td>
+              <td>Parodontal sjukdom, större omfattning</td>
+              <td class="blue">1350kr</td>
+              <td class="gold">728kr</td>
+              <td class="red">292kr</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>Tanduttagning, en tand</td>
+              <td class="blue">1500kr</td>
+              <td class="gold">868kr</td>
+              <td class="red">425kr</td>
+            </tr>
+            <tr>
+              <td>501</td>
+              <td>Rensning och rotfyllning, en rotkanal</td>
+              <td class="blue">3993kr</td>
+              <td class="gold">2493kr</td>
+              <td class="red">1087kr</td>
+            </tr>
+            <tr>
+              <td>521</td>
+              <td>Akut trepanation och kavumextirpation</td>
+              <td class="blue">1500kr</td>
+              <td class="gold">1025kr</td>
+              <td class="red">693kr</td>
+            </tr>
+            <tr>
+              <td>701</td>
+              <td>Fyllning av en yta på framtand eller hörntand</td>
+              <td class="blue">1000kr</td>
+              <td class="gold">640kr</td>
+              <td class="red">388kr</td>
+            </tr>
+            <tr>
+              <td>704</td>
+              <td>Fyllning av en yta på molar eller premolar</td>
+              <td class="blue">1250kr</td>
+              <td class="gold">788kr</td>
+              <td class="red">464kr</td>
+            </tr>
+            <tr>
+              <td>800</td>
+              <td>Tandstödd krona kind- eller tuggtand, en per käke</td>
+              <td class="blue">6708kr</td>
+              <td class="gold">5208kr</td>
+              <td class="red">2903kr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Tandvårdsstödet -->
+    <section class="info-box">
+      <div class="container">
+        <h2>Tandvårdsstödet</h2>
+        <p>
+          Tandvårdsstödet kan delas in i tre delar, allmänt tandvårdsbidrag
+          (ATB), särskilt tandvårdsbidrag (STB) och högkostnadsskydd. Från och
+          med det året du fyller 24 omfattas du av den allmänna
+          tandvårdsförsäkringen. Detta innebär att du som patient får ett
+          ekonomiskt stöd från Försäkringskassan, vilket innebär en ersättning
+          som betalas till din tandläkare.
+        </p>
+
+        <h3>Allmänt tandvårdsbidrag (ATB)</h3>
+        <p>
+          Allmänt tandvårdsbidrag omfattar alla som från och med det år de
+          fyller 24 år får ett bidrag till regelbundna tandvårdsbesök. Bidraget
+          är på 300 kronor per år för personer i åldrarna 30–64 år. För de som
+          fyller 24–29 år samt 65 år och äldre är bidraget på 600 kronor per år.
+          Bidraget samlas totalt i 2 år, om man inte utnyttjar bidraget inom 2
+          år försvinner bidraget och man får ett nytt bidrag 1 juli varje år.
+        </p>
+
+        <h3>Särskilt tandvårdsbidrag (STB)</h3>
+        <p>
+          Särskilt tandvårdsbidrag är ett bidrag för patienter som har en
+          sjukdom eller en funktionsnedsättning som innebär en risk för
+          försämrad tandhälsa. Bidraget är 600 kronor per halvår. Det kan
+          användas till förebyggande tandvårdsåtgärder som exempelvis
+          undersökning och förebyggande tandvård.
+        </p>
+
+        <h3>Högkostnadsskydd</h3>
+        <p>Tandvårdsförsäkringen ger också ett skydd mot höga kostnader.</p>
+        <p>
+          Skyddet innebär att om du som patient har kostnader mellan 3 000 – 15
+          000 kronor ersätts dessa med 50 procent enligt referenspriset.
+          Kostnader över 15 000 kronor ersätts med 85 procent enligt
+          referenspriset. Kostnader upp till 3000 kronor betalar du själv
+          förutom den del som kan betalas med tandvårdsbidraget. Ersättningen
+          baseras inte på det faktiska priset du betalar hos din tandläkare utan
+          på den grundläggande referensprislistan.
+        </p>
+        <p>
+          Referenspriset är endast ett riktpris och tandläkarens prislista kan
+          ligga både under och över referenspriset. Det är inte heller all
+          tandvård som ersätts utan regelverket beslutar om när och var i
+          munhålan vissa behandlingar kan göras för att vara
+          ersättningsberättigade. I vår prislista kan du se prisexempel för de
+          vanligaste behandlingarna och det pris som din
+          försäkringskasseersättning beräknas på, det så kallade referenspriset.
+          Du får mer information av oss om vad som gäller just din behandling.
+        </p>
+
+        <a href="kontakt.html" class="btn">Kontakta oss</a>
+      </div>
+    </section>
+
+    <!-- Avbetalning -->
+    <section class="info-box">
+      <div class="container">
+        <h2>Avbetalning</h2>
+        <p><strong>Delbetalning upp till 36 månader</strong></p>
+        <p>Vill du dela upp dina betalningar hos oss i Zdental?</p>
+        <p>
+          Vi på Zdental samarbetar med Payzmart som erbjuder avbetalning i 36
+          månader. För mer information tryck på ikonen nedan.
+        </p>
+        <p><strong>I samarbete med:</strong></p>
+        <div class="payzmart-logo-container">
+          <img
+            src="payzmart_logg.png"
+            alt="Payzmart logotyp"
+            style="max-width: 180px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container footer-flex">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Zdental logotyp" />
+        </div>
+        <div class="footer-contact">
+          <h3>Kontakt info</h3>
+          <p><i class="fas fa-phone-alt"></i> 08-26 12 66</p>
+          <p><i class="fas fa-envelope"></i> Info@zdental.se</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Råsundavägen 166, 169 36 Solna
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Zdental - 2025 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      document.querySelectorAll(".accordion-header").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = button.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
